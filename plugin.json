@@ -1,0 +1,25 @@
+{
+  "type": "panel",
+  "name": "Operation CRUD Panel",
+  "id": "smart-factory-operation-crud-table-panel",
+
+  "info": {
+    "description": "A table for the admin to CRUD operation database",
+    "keywords": ["table", "panel"],
+    "links": [
+      {"name": "Project site", "url": "https://github.com/Spruik/smart-factory-operation-crud-table-panel"}
+    ],
+    "version": "1.0.0",
+    "updated": "2019-07-02"
+  },
+  
+  "logos": {
+    "small": "img/icn-table-panel.svg",
+    "large": "img/icn-table-panel.svg"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "4.x.x",
+    "plugins": [ ]
+  }
+}

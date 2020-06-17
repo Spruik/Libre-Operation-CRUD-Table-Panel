@@ -1,0 +1,45 @@
+<div class="modal-body">
+  <div class="modal-header">
+    <h2 class="modal-header-title">
+      <i class="fa fa-info-circle"></i>
+      <span class="p-l-1">{{model.operationForm.formTitle}}</span>
+    </h2>
+
+    <a class="modal-header-close" id="mct-operation-form-cancelBtn" ng-click="dismiss();">
+      <i class="fa fa-remove"></i>
+    </a>
+  </div>
+
+  <form class="form" id="master-data-product-form" name="form">
+    <div class="modal-content" id="modal-modal-content" style="max-height:600px; overflow-y:scroll">
+
+      <!-- Name -->
+      <div id="datalist-production-line" class="row form-group mtc-pf" style="margin-bottom: 10px">
+        <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 7px;">Operation:</label>
+        <input class="md-products-datalist-input col-lg-7 col-md-7 col-sm-7 col-xs-7" type="text" maxlength="20" ng-model="model.operationForm.operation.name" placeholder="Name" required>
+      </div>
+
+      <!-- Operation Sequence -->
+      <div id="datalist-production-line" class="row form-group mtc-pf" style="margin-bottom: 10px">
+        <label class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 7px;">Operation Sequence:</label>
+        <input class="md-products-datalist-input col-lg-7 col-md-7 col-sm-7 col-xs-7" ng-model="model.operationForm.operation.sequence" type="number" placeholder="Sequence" required>
+      </div>
+
+      <!-- -------- -->
+      <div class="custom-separator" style="margin-top:30px"></div>
+      <!-- -------- -->
+
+      <div class="button-wrapper" style="text-align:center; margin-top:30px">
+        <button
+          type="button"
+          class="btn btn-success"
+          style="width:9rem"
+          ng-disabled="form.$invalid"
+          ng-click="model.operationForm.func.onSubmit()"
+        >
+          {{model.operationForm.submitBtnText}}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
