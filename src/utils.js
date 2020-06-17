@@ -2,7 +2,7 @@ import { appEvents } from 'app/core/core'
 
 const hostname = window.location.hostname
 const proto = window.location.protocol
-export const postgRestHost = proto + '://' + hostname + ':5436/'
+export const postgRestHost = proto + '//' + hostname + ':5436/'
 
 export const post = (url, line) => {
     return new Promise((resolve, reject) => {

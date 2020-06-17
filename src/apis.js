@@ -1,6 +1,6 @@
 import * as utils from './utils'
 
-export const addOpation = (operation, success, fail) => {
+export const addOperation = (operation, success, fail) => {
   const toSend = {
     name: operation.name,
     sequence: operation.sequence
