@@ -172,7 +172,7 @@ export class TableCtrl extends MetricsPanelCtrl {
       const nameIndex = utils.findIndexByKeyOnDimension(this.operationDimensions, 'name')
       const seqIndex = utils.findIndexByKeyOnDimension(this.operationDimensions, 'sequence')
       const filteredRows = this.dataRaw[0].rows.filter(row => {
-        if (row[nameIndex].toLowerCase().includes(key.toLowerCase()) || row[descIndex].toLowerCase().includes(key.toLowerCase())) {
+        if (row[nameIndex].toLowerCase().includes(key.toLowerCase()) || (row[seqIndex]+'').toLowerCase().includes(key.toLowerCase())) {
           return row
         }
       })
@@ -190,7 +190,8 @@ export class TableCtrl extends MetricsPanelCtrl {
       return dataList
     }
 
-    dataList[0].rows = dataList[0].rows.sort((a,b) => a[0].localeCompare(b[0]))
+    dataList[0].rows = dataList[0].rows.sort((a,b) => {return a[2] < b[2]})
+
     return dataList
   }
 

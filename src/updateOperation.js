@@ -2,7 +2,7 @@ import * as utils from './utils'
 import * as apis from './apis'
 
 const onSubmit = scope => () => {
-  const cur = scope.currentOpeartion
+  const cur = scope.currentOperation
   const newOperation = scope.operationForm.operation
 
   if (newOperation.name !== cur.name) {
@@ -17,7 +17,7 @@ const onSubmit = scope => () => {
     cur.id, 
     newOperation,
     utils.successCallBack('mct-operation-form-cancelBtn', 'Operation has been updated successfully', scope),
-    e => utils.failCallBack('mct-operation-form-cancelBtn', `Error occurred when updating the operation due to ${e}, please try again`)
+    e => utils.failCallBack('mct-operation-form-cancelBtn', `Error occurred when updating the operation due to ${e}, please try again`)()
   )
 }
 
@@ -26,10 +26,8 @@ const preprocess = scope => {
   scope.operationForm = {
     operation: {
       id : cur.id,
-      description: cur.description,
-      description2: cur.description_optional,
-      unit: cur.unit_of_measure,
-      name: cur.name
+      name: cur.name,
+      sequence: cur.sequence
     },
     func: {
       onSubmit: onSubmit(scope)

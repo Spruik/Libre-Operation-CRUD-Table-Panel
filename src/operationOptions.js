@@ -12,7 +12,7 @@ const onRemoveClick = scope => () => {
   apis.removeOperation(
     cur.id,
     utils.successCallBack('mct-operation-option-form-cancelBtn', 'Operation has been removed successfully', scope),
-    e => utils.failCallBack('mct-operation-option-form-cancelBtn', `Error occurred when removing the operation due to ${e}, please try again`)
+    e => utils.failCallBack('mct-operation-option-form-cancelBtn', `Error occurred when removing the operation due to ${e}, please try again`)()
   )
 }
 

@@ -13,7 +13,7 @@ const onSubmit = scope => () => {
   apis.addOperation(
     scope.operationForm.operation,
     utils.successCallBack('mct-operation-form-cancelBtn', 'Operation has been submitted successfully', scope),
-    e => utils.failCallBack('mct-operation-form-cancelBtn', `Error occurred when submitting the operation due to ${e}, please try again`)
+    e => utils.failCallBack('mct-operation-form-cancelBtn', `Error occurred when submitting the operation due to ${e}, please try again`)()
   )
 }
 
