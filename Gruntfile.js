@@ -112,7 +112,6 @@ module.exports = function (grunt) {
     'copy:readme',
     'string-replace',
     'copy:pluginDef',
-    'copy:image_to_dist',
     'babel'])
 
   grunt.registerTask('build', [
