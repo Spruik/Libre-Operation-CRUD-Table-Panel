@@ -3,7 +3,11 @@
   "name": "Operation CRUD Panel",
   "type": "panel",
   "info": {
-    "author": "Spruik Technologies",
+    "author": {
+      "name": "Spruik Technologies",
+      "email": "info@spruiktec.com",
+      "url": "https://spruiktec.com"
+    },
     "description": "Libre Grafana panel for Create, Read, Update and Delete of Product Operations",
     "keywords": ["table", "panel", "libre"],
     "links": [
