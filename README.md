@@ -170,7 +170,7 @@ Prerequisites
 
 Build panel and zip into archive
 
-```shell 
+```shell
 ~/libre-operation-crud-table-panel
 $ grunt build
 Running "clean:0" (clean) task
