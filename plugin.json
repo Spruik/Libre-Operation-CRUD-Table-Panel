@@ -1,25 +1,31 @@
 {
-  "type": "panel",
-  "name": "Operation CRUD Panel",
   "id": "libre-operation-crud-table-panel",
-
+  "name": "Operation CRUD Panel",
+  "type": "panel",
   "info": {
+    "author": "Spruik Technologies",
     "description": "Libre Grafana panel for Create, Read, Update and Delete of Product Operations",
     "keywords": ["table", "panel", "libre"],
     "links": [
-      {"name": "Project site", "url": "https://github.com/Spruik/libre-operation-crud-table-panel"}
+      {"name": "Project site", "url": "https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel"},
+      {"name": "Issues", "url": "https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/issues"}
     ],
-    "version": "1.0.0",
-    "updated": "2020-06-24"
+    "logos": {
+      "small": "img/icn-table-panel.svg",
+      "large": "img/icn-table-panel.svg"
+    },
+    "screenshots": [
+      {"name": "Panel", "url":"public/plugins/libre-operation-crud-table-panel/docs/operation-crud-table-panel.png"},
+      {"name": "Operation Actions", "url":"public/plugins/libre-operation-crud-table-panel/docs/operation-crud-table-panel-actions.png"},
+      {"name": "Operation Add", "url":"public/plugins/libre-operation-crud-table-panel/docs/operation-crud-table-panel-add.png"},
+      {"name": "Panel Metrics", "url":"public/plugins/libre-operation-crud-table-panel/docs/operation-crud-table-panel-metrics.png"},
+      {"name": "Operation Search", "url":"public/plugins/libre-operation-crud-table-panel/docs/operation-crud-table-panel-search.png"}
+    ],
+    "updated": "2020-06-24",
+    "version": "1.0.0"
   },
-  
-  "logos": {
-    "small": "img/icn-table-panel.svg",
-    "large": "img/icn-table-panel.svg"
-  },
-
   "dependencies": {
-    "grafanaVersion": "4.x.x",
+    "grafanaVersion": "6.x.x",
     "plugins": [ ]
   }
 }
