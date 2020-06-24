@@ -14,7 +14,7 @@ const onSubmit = scope => () => {
   }
 
   apis.updateOperation(
-    cur.id, 
+    cur.id,
     newOperation,
     utils.successCallBack('mct-operation-form-cancelBtn', 'Operation has been updated successfully', scope),
     e => utils.failCallBack('mct-operation-form-cancelBtn', `Error occurred when updating the operation due to ${e}, please try again`)()
@@ -25,7 +25,7 @@ const preprocess = scope => {
   const cur = scope.currentOperation
   scope.operationForm = {
     operation: {
-      id : cur.id,
+      id: cur.id,
       name: cur.name,
       sequence: cur.sequence
     },
