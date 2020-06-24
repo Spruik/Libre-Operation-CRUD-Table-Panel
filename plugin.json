@@ -1,16 +1,16 @@
 {
   "type": "panel",
   "name": "Operation CRUD Panel",
-  "id": "smart-factory-operation-crud-table-panel",
+  "id": "libre-operation-crud-table-panel",
 
   "info": {
-    "description": "A table for the admin to CRUD operation database",
-    "keywords": ["table", "panel"],
+    "description": "Libre Grafana panel for Create, Read, Update and Delete of Product Operations",
+    "keywords": ["table", "panel", "libre"],
     "links": [
-      {"name": "Project site", "url": "https://github.com/Spruik/smart-factory-operation-crud-table-panel"}
+      {"name": "Project site", "url": "https://github.com/Spruik/libre-operation-crud-table-panel"}
     ],
     "version": "1.0.0",
-    "updated": "2019-07-02"
+    "updated": "2020-06-24"
   },
   
   "logos": {

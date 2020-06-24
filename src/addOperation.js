@@ -5,10 +5,10 @@ const onSubmit = scope => () => {
   // check name here, if match any name that exists, stop.
   // we call it name, but for users, it's the ID
   const nameIndex = scope.operationNames.indexOf(scope.operationForm.operation.name)
-  if (nameIndex !== -1) { 
+  if (nameIndex !== -1) {
     utils.alert('warning', 'Name exists', 'The name of the operation you are creating exists')
     return
-   }
+  }
 
   apis.addOperation(
     scope.operationForm.operation,
@@ -20,7 +20,7 @@ const onSubmit = scope => () => {
 const preprocess = scope => {
   scope.operationForm = {
     operation: {
-      name : '',
+      name: '',
       sequence: null
     },
     func: {
