@@ -2,7 +2,7 @@
 
 | Libre Grafana panel for Create, Read, Update and Delete of Product Operations
 
-This panel gives users the ability to search for, create, read, update and delete product operations as part of [Libre](https://github.com/Spruik/libre-grafana). Operations are the ingredient steps that can applied to a product. This plugin interfaces to a no security json rest api for operations running on the same grafana server. This panel is targeted at Grafana v6.x.x only.
+This panel gives users the ability to search for, create, read, update and delete product operations as part of [Libre](https://github.com/Spruik/Libre). Operations are the ingredient steps that can applied to a product. This plugin interfaces to a no security json rest api for operations running on the same grafana server. This panel is targeted at Grafana v6.x.x only.
 
 Operation objects have two properties.
 
@@ -17,23 +17,28 @@ The easiest way to get started with this plugin is to:
 
 Download the latest release
 
-  ```shell
-  $ wget https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/raw/master/libre-operation-crud-table-panel.zip
-  $
-  ```
+```shell 
+$ wget https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/archive/libre-operation-crud-table-panel.zip
+Resolving github.com (github.com)... 140.82.114.4
+...
+2020-06-24 20:47:59 (1.08 MB/s) - 'libre-operation-crud-table-panel.zip' saved [90150]
+```
 
 Unzip into your Grafana plugin directory
 
 ```shell
 $ unzip libre-operation-crud-table-panel.zip -d /var/lib/grafana/plugins
-$
+Archive: libre-operation-crud-table-panel.zip
+...
+inflating: /var/lib/grafana/libre-operation-crud-table-panel/utils.js.map
 ```
 
 Restart Grafana
 
 ```shell
-$ systemctl restart grafana-server
-$
+$ service grafana-server restart 
+ * Stopping Grafana Server
+ * Starting Grafana Server
 ```
 
 ## Usage
@@ -46,9 +51,8 @@ In order to get the most out of this panel:
 
 2. Apply custom column styles:
 
-| column   | Type   | Name Override | Other                    |
-
-----------------------------------------------------------------
+| Column   | Type   | Name Override | Other                    |
+|----------|--------|---------------|--------------------------|
 | id       | hidden |       -       |   -                      |
 | name     | String | ID            |   -                      |
 | sequence | Number | SEQUENCE      | unit: short, decimals: 0 |
@@ -100,7 +104,6 @@ Unpacking objects: 100% (46/46), done.
 Enter project and install dependencies
 
 ```shell
-~/
 $ cd ./libre-operation-crud-table-panel
 ~/libre-operation-crud-table-panel
 $ npm install
@@ -113,14 +116,12 @@ found 42 vulnerabilities (11 low, 6 moderate, 25 high)
 Install Grunt globally
 
 ```shell
-~/libre-operation-crud-table-panel
 $ npm install grunt -g
 ```
 
 Run grunt to build the panel
 
 ```shell
-~/libre-operation-crud-table-panel
 $ grunt
 
 Running "copy:src_to_dist" (copy) task
@@ -176,23 +177,35 @@ $ grunt build
 Running "clean:0" (clean) task
 >> 1 path cleaned.
 
+Running "clean:1" (clean) task
+>> 1 path cleaned.
+
 Running "copy:src_to_dist" (copy) task
-Created 2 directories, copied 8 files
+Created 3 directories, copied 9 files
 
 Running "copy:libs" (copy) task
 
 
+Running "copy:readme" (copy) task
+Created 1 directory, copied 8 files
+
+Running "string-replace:dist" (string-replace) task
+
+1 files created
+
 Running "copy:pluginDef" (copy) task
 Copied 1 file
 
-Running "copy:image_to_dist" (copy) task
-
-
 Running "babel:dist" (babel) task
 
+Running "compress:main" (compress) task
+>> Compressed 44 files.
+
 Done, without errors.
-~/libre-operation-crud-table-panel
-$ zip -r ./dist libre-operation-crud-table-panel.zip
+```
+
+Find a completed build of this panel in the root directory named `libre-operation-crud-table-panel.zip`.
+
 ## Contributing
 
 For any issue, there are fundamentally three ways an individual can contribute:
