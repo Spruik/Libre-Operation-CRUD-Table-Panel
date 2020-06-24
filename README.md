@@ -13,7 +13,7 @@ Operation objects have two properties.
 
 ## Installation
 
-The easiest way to get started with this plugin is to:
+The easiest way to get started with this plugin is to [download the latest release](https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/releases/latest/download/libre-operation-crud-table-panel.zip), unzip into grafana plugin directory and restart grafana.
 
 Download the latest release
 
