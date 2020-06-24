@@ -17,8 +17,8 @@ The easiest way to get started with this plugin is to:
 
 Download the latest release
 
-```shell 
-$ wget https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/archive/libre-operation-crud-table-panel.zip
+```shell
+$ wget https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/releases/latest/download/libre-operation-crud-table-panel.zip
 Resolving github.com (github.com)... 140.82.114.4
 ...
 2020-06-24 20:47:59 (1.08 MB/s) - 'libre-operation-crud-table-panel.zip' saved [90150]
