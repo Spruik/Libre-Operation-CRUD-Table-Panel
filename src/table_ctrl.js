@@ -50,7 +50,7 @@ export class TableCtrl extends MetricsPanelCtrl {
 
     this.pageIndex = 0
 
-    if (this.panel.styles === 0) {
+    if (this.panel.styles === undefined) {
       this.panel.styles = this.panel.columns
       this.panel.columns = this.panel.fields
       delete this.panel.columns

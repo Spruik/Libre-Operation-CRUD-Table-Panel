@@ -57,7 +57,7 @@ export class TableRenderer {
   }
 
   defaultCellFormatter (v, style) {
-    if (v === null || v === 0 || v === undefined) {
+    if (v === null || v === undefined || v === undefined) {
       return ''
     }
 
@@ -152,7 +152,7 @@ export class TableRenderer {
           }
         }
 
-        if (v === null || v === 0) {
+        if (v === null || v === undefined) {
           return '-'
         }
 
@@ -165,7 +165,7 @@ export class TableRenderer {
       const valueFormatter = kbn.valueFormats[column.unit || column.style.unit]
 
       return v => {
-        if (v === null || v === 0) {
+        if (v === null || v === undefined) {
           return '-'
         }
 
@@ -188,7 +188,7 @@ export class TableRenderer {
       return
     }
 
-    if (value === null || value === 0 || _.isArray(value)) {
+    if (value === null || value === undefined || _.isArray(value)) {
       return
     }
 
