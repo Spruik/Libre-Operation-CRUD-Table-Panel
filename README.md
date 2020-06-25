@@ -9,7 +9,7 @@ Operation objects have two properties.
 1. name - Name of the operation _limited to 20 characters_
 2. sequence - Order of display _>= 0_
 
-![Operation Panel](./docs/operation-crud-table-panel.png)
+![Operation Panel](./docs/operation-crud-table-panel.gif)
 
 ## Installation
 
@@ -61,19 +61,13 @@ In order to get the most out of this panel:
 
 Use the + icon to add in a new operation by providing a name and a sequence.
 
-![Add Operation by clicking the plus icon and providing a name and sequence](./docs/operation-crud-table-panel-add.png)
-
 ### Update / Delete
 
 Click an existing operation so show the actions popup. Delete removes the object, whilst update shows a popup to edit and save an operation properties.
 
-![Click an existing operation to perform update and delete actions](./docs/operation-crud-table-panel-actions.png)
-
 ### Searching
 
 Use the search box to filter the list of operations.
-
-![Use the search box to filter the list of operations](./docs/operation-crud-table-panel-search.png)
 
 ## Developing
 
