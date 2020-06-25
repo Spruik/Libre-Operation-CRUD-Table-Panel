@@ -10,8 +10,8 @@ import * as form from './addOperation'
 import * as utils from './utils'
 import * as operationOption from './operationOptions'
 
-import './css/style.css'
-import './css/instant-serach.css'
+import './css/style.css!'
+import './css/instant-serach.css!'
 
 const panelDefaults = {
   targets: [{}],
@@ -65,6 +65,8 @@ export class TableCtrl extends MetricsPanelCtrl {
     this.events.on('init-edit-mode', this.onInitEditMode.bind(this))
     this.events.on('init-panel-actions', this.onInitPanelActions.bind(this))
 
+    debugger;
+    
     $(document).off('click', 'tr.tr-affect#master-data-operation-tr')
     $(document).on('click', 'tr.tr-affect#master-data-operation-tr', function (e) {
       const rowData = $('td', this).map((index, td) => {
@@ -345,4 +347,4 @@ export class TableCtrl extends MetricsPanelCtrl {
   }
 }
 
-TableCtrl.templateUrl = './partials/module.html'
+TableCtrl.templateUrl = 'plugins/libre-operation-crud-table-panel/partials/module.html'
