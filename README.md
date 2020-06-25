@@ -36,7 +36,7 @@ inflating: /var/lib/grafana/libre-operation-crud-table-panel/utils.js.map
 Restart Grafana
 
 ```shell
-$ service grafana-server restart 
+$ service grafana-server restart
  * Stopping Grafana Server
  * Starting Grafana Server
 ```
@@ -111,6 +111,9 @@ Install Grunt globally
 
 ```shell
 $ npm install grunt -g
+C:\Users\user\AppData\Roaming\npm\grunt -> C:\Users\user\AppData\Roaming\npm\node_modules\grunt\bin\grunt
++ grunt@1.1.0
+updated 1 package in 1.364s
 ```
 
 Run grunt to build the panel
