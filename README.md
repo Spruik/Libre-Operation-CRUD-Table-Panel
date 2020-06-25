@@ -9,7 +9,7 @@ Operation objects have two properties.
 1. name - Name of the operation _limited to 20 characters_
 2. sequence - Order of display _>= 0_
 
-![Operation Panel](./docs/operation-crud-table-panel.gif)
+![Operation Panel](./docs/libre-operation-crud-table-panel.gif)
 
 ## Installation
 
@@ -47,7 +47,7 @@ In order to get the most out of this panel:
 
 1. Add a *Table* metric to query operations. For example `SELECT * FROM operation`. This panel expects an id, name and sequence column.
 
-![Panel Metrics](./docs/operation-crud-table-panel-metrics.png)
+![Panel Metrics](./docs/libre-operation-crud-table-panel-metrics.png)
 
 2. Apply custom column styles:
 
