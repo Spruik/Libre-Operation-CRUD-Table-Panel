@@ -1,4 +1,4 @@
-version: '3.0'
+version: '3.6'
 
 x-common-postgres-variables: &common-postgres-variables
   POSTGRES_USER: postgres
@@ -11,11 +11,11 @@ x-common-influx-variables: &common-influx-variables
 
 services:
   grafana:
-    image: spruik/libre-grafana
+    image: spruiktec/libre-grafana
     ports:
       - 3000:3000
-    volume:
-      - ./dist:/var/lib/grafana/plugins/libre-operation-crud-table-panel:apiVersion:ro
+    volumes:
+      - ./dist:/var/lib/grafana/plugins/libre-operation-crud-table-panel:ro
     environment: 
       <<: *common-postgres-variables
       <<: *common-influx-variables
@@ -31,9 +31,9 @@ services:
     depends_on: 
       - postgres
   simulator:
-    image: spruik/libre-simulator
+    image: spruiktec/libre-simulator
     depends_on: 
       - postrest
   postgres:
-    image: spruik/libre-postgres
+    image: spruiktec/libre-postgres
     environment: *common-postgres-variables
