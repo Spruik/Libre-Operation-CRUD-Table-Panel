@@ -65,8 +65,6 @@ export class TableCtrl extends MetricsPanelCtrl {
     this.events.on('init-edit-mode', this.onInitEditMode.bind(this))
     this.events.on('init-panel-actions', this.onInitPanelActions.bind(this))
 
-    debugger;
-    
     $(document).off('click', 'tr.tr-affect#master-data-operation-tr')
     $(document).on('click', 'tr.tr-affect#master-data-operation-tr', function (e) {
       const rowData = $('td', this).map((index, td) => {
@@ -347,4 +345,4 @@ export class TableCtrl extends MetricsPanelCtrl {
   }
 }
 
-TableCtrl.templateUrl = 'plugins/libre-operation-crud-table-panel/partials/module.html'
+TableCtrl.templateUrl = 'public/plugins/libre-operation-crud-table-panel/partials/module.html'
