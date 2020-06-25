@@ -10,8 +10,8 @@ import * as form from './addOperation'
 import * as utils from './utils'
 import * as operationOption from './operationOptions'
 
-import './css/style.css'
-import './css/instant-serach.css'
+import './css/style.css!'
+import './css/instant-serach.css!'
 
 const panelDefaults = {
   targets: [{}],
@@ -345,4 +345,4 @@ export class TableCtrl extends MetricsPanelCtrl {
   }
 }
 
-TableCtrl.templateUrl = './partials/module.html'
+TableCtrl.templateUrl = 'public/plugins/libre-operation-crud-table-panel/partials/module.html'

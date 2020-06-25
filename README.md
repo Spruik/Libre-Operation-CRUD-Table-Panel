@@ -9,7 +9,7 @@ Operation objects have two properties.
 1. name - Name of the operation _limited to 20 characters_
 2. sequence - Order of display _>= 0_
 
-![Operation Panel](./docs/operation-crud-table-panel.png)
+![Operation Panel](./docs/libre-operation-crud-table-panel.gif)
 
 ## Installation
 
@@ -36,7 +36,7 @@ inflating: /var/lib/grafana/libre-operation-crud-table-panel/utils.js.map
 Restart Grafana
 
 ```shell
-$ service grafana-server restart 
+$ service grafana-server restart
  * Stopping Grafana Server
  * Starting Grafana Server
 ```
@@ -47,7 +47,7 @@ In order to get the most out of this panel:
 
 1. Add a *Table* metric to query operations. For example `SELECT * FROM operation`. This panel expects an id, name and sequence column.
 
-![Panel Metrics](./docs/operation-crud-table-panel-metrics.png)
+![Panel Metrics](./docs/libre-operation-crud-table-panel-metrics.png)
 
 2. Apply custom column styles:
 
@@ -61,19 +61,13 @@ In order to get the most out of this panel:
 
 Use the + icon to add in a new operation by providing a name and a sequence.
 
-![Add Operation by clicking the plus icon and providing a name and sequence](./docs/operation-crud-table-panel-add.png)
-
 ### Update / Delete
 
 Click an existing operation so show the actions popup. Delete removes the object, whilst update shows a popup to edit and save an operation properties.
 
-![Click an existing operation to perform update and delete actions](./docs/operation-crud-table-panel-actions.png)
-
 ### Searching
 
 Use the search box to filter the list of operations.
-
-![Use the search box to filter the list of operations](./docs/operation-crud-table-panel-search.png)
 
 ## Developing
 
@@ -117,6 +111,9 @@ Install Grunt globally
 
 ```shell
 $ npm install grunt -g
+C:\Users\user\AppData\Roaming\npm\grunt -> C:\Users\user\AppData\Roaming\npm\node_modules\grunt\bin\grunt
++ grunt@1.1.0
+updated 1 package in 1.364s
 ```
 
 Run grunt to build the panel
@@ -213,10 +210,6 @@ For any issue, there are fundamentally three ways an individual can contribute:
 - By opening the issue for discussion: For instance, if you believe that you have uncovered a bug in, creating a new issue in the [GitHub issue tracker](https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel/issues) is the way to report it.
 - By helping to triage the issue: This can be done either by providing supporting details (a test case that demonstrates a bug), or providing suggestions on how to address the issue.
 - By helping to resolve the issue: Typically, this is done either in the form of demonstrating that the issue reported is not a problem after all, or more often, by opening a Pull Request that changes some bit of something in the panel in a concrete and reviewable manner.
-
-## Acknowledgements
-
-- [Jamen1147](https://github.com/Jamen1147)
 
 ## Change log
 
