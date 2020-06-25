@@ -81,7 +81,7 @@ export function tablePanelEditor ($q, uiSegmentSrv) {
   return {
     restrict: 'E',
     scope: true,
-    templateUrl: 'public/plugins/libre-products-crud-table-panel/partials/editor.html',
+    templateUrl: 'public/plugins/libre-operation-crud-table-panel/partials/editor.html',
     controller: TablePanelEditorCtrl
   }
 }
