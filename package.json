@@ -1,6 +1,6 @@
 {
   "name": "libre-operation-crud-table-panel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Libre Grafana panel for Create, Read, Update and Delete of Product Operations",
   "homepage": "https://github.com/Spruik/Libre-Operation-CRUD-Table-Panel",
   "repository": {

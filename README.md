@@ -213,4 +213,8 @@ For any issue, there are fundamentally three ways an individual can contribute:
 
 ## Change log
 
+- 1.0.1 Documentation Updates
+  - Fix package description
+  - Fix typo & subtitle markdown
+
 - 1.0.0 Initial Public Release
