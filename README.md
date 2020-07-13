@@ -1,6 +1,6 @@
 # Libre Operation CRUD Table Panel
 
-| Libre Grafana panel for Create, Read, Update and Delete of Product Operations
+> Libre Grafana panel for Create, Read, Update and Delete of Product Operations
 
 This panel gives users the ability to search for, create, read, update and delete product operations as part of [Libre](https://github.com/Spruik/Libre). Operations are the ingredient steps that can applied to a product. This plugin interfaces to a no security json rest api for operations running on the same grafana server. This panel is targeted at Grafana v6.x.x only.
 
@@ -142,10 +142,10 @@ Start docker-compose.dev.yml detached
 ```shell
 ~/libre-operation-crud-table-panel
 $ docker-compose -f docker-compose.dev.yml up -d
-Starting libre-opation-crud-table-panel_postgres_1
-Starting libre-opation-crud-table-panel_postrest_1
-Starting libre-opation-crud-table-panel_simulator_1
-Starting libre-opation-crud-table-panel_grafana_1
+Starting libre-operation-crud-table-panel_postgres_1
+Starting libre-operation-crud-table-panel_postrest_1
+Starting libre-operation-crud-table-panel_simulator_1
+Starting libre-operation-crud-table-panel_grafana_1
 ```
 
 Run grunt watch to recompile on change
