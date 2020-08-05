@@ -100,40 +100,44 @@ Enter project and install dependencies
 ```shell
 $ cd ./libre-operation-crud-table-panel
 ~/libre-operation-crud-table-panel
-$ npm install
+$ npm install --silent
 ...
-added 714 packages from 399 contributors and audited 719 packages in 11.871s
-found 42 vulnerabilities (11 low, 6 moderate, 25 high)
-  run `npm audit fix` to fix them, or `npm audit` for details
+added 613 packages in 9.938s
+
 ```
 
 Install Grunt globally
 
 ```shell
-$ npm install grunt -g
+$ npm install grunt -g --silent
 C:\Users\user\AppData\Roaming\npm\grunt -> C:\Users\user\AppData\Roaming\npm\node_modules\grunt\bin\grunt
-+ grunt@1.1.0
-updated 1 package in 1.364s
++ grunt@1.2.1
+updated 1 package in 5.748s
 ```
 
 Run grunt to build the panel
 
 ```shell
 $ grunt
-
 Running "copy:src_to_dist" (copy) task
-Created 2 directories, copied 8 files
+Created 3 directories, copied 9 files
 
 Running "copy:libs" (copy) task
+
+
+Running "copy:readme" (copy) task
+Created 1 directory, copied 9 files
+
+Running "string-replace:dist" (string-replace) task
+
+1 files created
 
 Running "copy:pluginDef" (copy) task
 Copied 1 file
 
-Running "copy:image_to_dist" (copy) task
-
 Running "babel:dist" (babel) task
 
-Done, without errors.
+Done.
 
 ```
 
@@ -142,6 +146,7 @@ Start docker-compose.dev.yml detached
 ```shell
 ~/libre-operation-crud-table-panel
 $ docker-compose -f docker-compose.dev.yml up -d
+Creating network "libre-operation-crud-table-panel_default" with the default driver
 Starting libre-operation-crud-table-panel_postgres_1
 Starting libre-operation-crud-table-panel_postrest_1
 Starting libre-operation-crud-table-panel_simulator_1
@@ -184,7 +189,7 @@ Running "copy:libs" (copy) task
 
 
 Running "copy:readme" (copy) task
-Created 1 directory, copied 8 files
+Created 1 directory, copied 9 files
 
 Running "string-replace:dist" (string-replace) task
 
@@ -196,9 +201,13 @@ Copied 1 file
 Running "babel:dist" (babel) task
 
 Running "compress:main" (compress) task
->> Compressed 44 files.
+>> Compressed 45 files.
 
-Done, without errors.
+Running "compress:tar" (compress) task
+>> Compressed 45 files.
+
+Done.
+
 ```
 
 Find a completed build of this panel in the root directory named `libre-operation-crud-table-panel.zip`.
@@ -212,6 +221,13 @@ For any issue, there are fundamentally three ways an individual can contribute:
 - By helping to resolve the issue: Typically, this is done either in the form of demonstrating that the issue reported is not a problem after all, or more often, by opening a Pull Request that changes some bit of something in the panel in a concrete and reviewable manner.
 
 ## Change log
+
+- 1.0.2 Add build tar artifact
+  - Fix npm audit
+  - Remove unused libraries
+  - Add grunt compress tar
+  - Update README outputs
+  - Bump Revision
 
 - 1.0.1 Documentation Updates
   - Fix package description
