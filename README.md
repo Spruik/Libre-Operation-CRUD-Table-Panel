@@ -222,6 +222,11 @@ For any issue, there are fundamentally three ways an individual can contribute:
 
 ## Change log
 
+- 1.0.3 Npm Audit
+  - Bump Revision
+  - Upgrade bl from 1.2.2 to 1.2.3
+  - Upgrade ini from 1.3.5 to 1.3.8
+
 - 1.0.2 Add build tar artifact
   - Fix npm audit
   - Remove unused libraries
